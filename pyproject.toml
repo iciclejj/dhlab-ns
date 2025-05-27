@@ -1,0 +1,20 @@
+# This file manages the dhlab namespace packages.
+# The dhlab meta-package lives separately in ${PROJECT_ROOT}/dhlab-meta-package
+
+[project]
+# dependencies = ["pytest>=8.3.5"]
+requires-python = ">=3.10"
+
+[dependency-groups]
+test = ["pytest>=8.3.5"]
+
+dhlab-namespace = [
+    "-e dhlab-api @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-api",
+    "-e dhlab-core @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-core",
+    "-e dhlab-future @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-future",
+    "-e dhlab-legacy @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-legacy",
+    "-e dhlab-utils @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-utils",
+]
+
+[tool.pytest.ini_options]
+# consider_namespace_packages = true
