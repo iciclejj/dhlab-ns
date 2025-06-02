@@ -2,12 +2,10 @@
 # The dhlab meta-package lives separately in ${PROJECT_ROOT}/dhlab-meta-package
 
 [project]
-# dependencies = ["pytest>=8.3.5"]
+dependencies = []
 requires-python = ">=3.10"
-name = "dhlab-meta-dev"
-version = "1.0.0"
 
-[dependency-groups]
+[tool.pdm.dev-dependencies]
 test = ["pytest>=8.3.5"]
 
 dhlab-namespace = [
