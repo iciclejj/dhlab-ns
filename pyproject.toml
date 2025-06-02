@@ -4,16 +4,22 @@
 [project]
 # dependencies = ["pytest>=8.3.5"]
 requires-python = ">=3.10"
+name = "dhlab-meta-dev"
+version = "1.0.0"
 
 [dependency-groups]
 test = ["pytest>=8.3.5"]
 
 dhlab-namespace = [
-    "-e dhlab-api @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-api",
-    "-e dhlab-core @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-core",
-    "-e dhlab-future @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-future",
-    "-e dhlab-legacy @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-legacy",
-    "-e dhlab-utils @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-utils",
+    "dhlab-api @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-api",
+    "dhlab-core @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-core",
+    "dhlab-future @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-future",
+    "dhlab-legacy @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-legacy",
+    "dhlab-utils @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-utils",
+]
+
+dhlab-meta = [
+    "dhlab @ file:///${PROJECT_ROOT}/dhlab-meta-package",
 ]
 
 [tool.pytest.ini_options]
