@@ -7,11 +7,11 @@ authors = [
 ]
 dependencies = [
     # "dhlab @ file:///${PROJECT_ROOT}/",
-    "dhlab-api @ file:///${PROJECT_ROOT}/../dhlab-namespace/dhlab-api",
-    "dhlab-core @ file:///${PROJECT_ROOT}/../dhlab-namespace/dhlab-core",
-    "dhlab-future @ file:///${PROJECT_ROOT}/../dhlab-namespace/dhlab-future",
-    "dhlab-legacy @ file:///${PROJECT_ROOT}/../dhlab-namespace/dhlab-legacy",
-    "dhlab-utils @ file:///${PROJECT_ROOT}/../dhlab-namespace/dhlab-utils"
+    "dhlab-api",
+    "dhlab-core",
+    "dhlab-future",
+    "dhlab-legacy",
+    "dhlab-utils"
 ]
 requires-python = ">=3.10"
 # readme = "README.md"
