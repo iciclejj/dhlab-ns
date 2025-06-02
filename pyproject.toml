@@ -1,5 +1,5 @@
-# This file manages the dhlab namespace packages.
-# The dhlab meta-package lives separately in ${PROJECT_ROOT}/dhlab-meta-package
+# This file manages the dhlab-ns namespace packages.
+# The dhlab-ns meta-package lives separately in ${PROJECT_ROOT}/dhlab-ns-meta-package
 
 [project]
 dependencies = []
@@ -8,16 +8,16 @@ requires-python = ">=3.10"
 [tool.pdm.dev-dependencies]
 test = ["pytest>=8.3.5"]
 
-dhlab-namespace = [
-    "dhlab-api @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-api",
-    "dhlab-core @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-core",
-    "dhlab-future @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-future",
-    "dhlab-legacy @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-legacy",
-    "dhlab-utils @ file:///${PROJECT_ROOT}/dhlab-namespace/dhlab-utils",
+dhlab-ns-namespace = [
+    "dhlab-ns-api @ file:///${PROJECT_ROOT}/dhlab-ns-namespace/dhlab-ns-api",
+    "dhlab-ns-core @ file:///${PROJECT_ROOT}/dhlab-ns-namespace/dhlab-ns-core",
+    "dhlab-ns-future @ file:///${PROJECT_ROOT}/dhlab-ns-namespace/dhlab-ns-future",
+    "dhlab-ns-legacy @ file:///${PROJECT_ROOT}/dhlab-ns-namespace/dhlab-ns-legacy",
+    "dhlab-ns-utils @ file:///${PROJECT_ROOT}/dhlab-ns-namespace/dhlab-ns-utils",
 ]
 
-dhlab-meta = [
-    "dhlab @ file:///${PROJECT_ROOT}/dhlab-meta-package",
+dhlab-ns-meta = [
+    "dhlab-ns @ file:///${PROJECT_ROOT}/dhlab-ns-meta-package",
 ]
 
 [tool.pytest.ini_options]

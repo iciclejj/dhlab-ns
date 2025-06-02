@@ -1,5 +1,5 @@
 [project]
-name = "dhlab-future"
+name = "dhlab-ns-future"
 version = "0.1.0"
 description = ""
 authors = [
@@ -9,8 +9,8 @@ requires-python = ">=3.10"
 # readme = "README.md"
 license = {text = "MIT"}
 dependencies = [
-    "dhlab-api",
-    "dhlab-core",
+    "dhlab-ns-api",
+    "dhlab-ns-core",
     "IPython>=8.36.0", "pandas>=2.2.3",
 ]
 
@@ -23,4 +23,4 @@ build-backend = "pdm.backend"
 distribution = true
 
 [tool.pdm.build]
-includes = ["src/dhlab"]
+includes = ["src/dhlab-ns"]

@@ -1,16 +1,16 @@
 [project]
-name = "dhlab"
+name = "dhlab-ns"
 version = "2.42.0"
 description = "Text and image analysis of the digital collection (books, newspapers, periodicals, and images) at the National Library of Norway"
 authors = [
     {name = "The Digital Humanities Lab at The National Library of Norway (NB)", email = "dh-lab@nb.no"},
 ]
 dependencies = [
-    "dhlab-api",
-    "dhlab-core",
-    "dhlab-future",
-    "dhlab-legacy",
-    "dhlab-utils",
+    "dhlab-ns-api",
+    "dhlab-ns-core",
+    "dhlab-ns-future",
+    "dhlab-ns-legacy",
+    "dhlab-ns-utils",
 ]
 requires-python = ">=3.10"
 # readme = "README.md"
