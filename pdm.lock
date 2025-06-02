@@ -2,10 +2,10 @@
 # It is not intended for manual editing.
 
 [metadata]
-groups = ["default", "dhlab-meta", "dhlab-namespace", "test"]
+groups = ["default", "dhlab-ns-meta", "dhlab-ns-namespace", "test"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:f559a2210f2f3cbb1d0c05015cff327e9b7f85a70fb649cc6956c4918112dcb7"
+content_hash = "sha256:34cc0b85c5eaccd5a8cc16883ffbb8895691c4c0469e5f92096668a7457de865"
 
 [[metadata.targets]]
 requires_python = ">=3.10"
@@ -15,7 +15,7 @@ name = "asttokens"
 version = "3.0.0"
 requires_python = ">=3.8"
 summary = "Annotate AST trees with source code positions"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "asttokens-3.0.0-py3-none-any.whl", hash = "sha256:e3078351a059199dd5138cb1c706e6430c05eff2ff136af5eb4790f9d28932e2"},
     {file = "asttokens-3.0.0.tar.gz", hash = "sha256:0dcd8baa8d62b0c1d118b399b2ddba3c4aff271d0d7a9e0d4c1681c79035bbc7"},
@@ -26,7 +26,7 @@ name = "beautifulsoup4"
 version = "4.13.4"
 requires_python = ">=3.7.0"
 summary = "Screen-scraping library"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "soupsieve>1.2",
     "typing-extensions>=4.0.0",
@@ -41,7 +41,7 @@ name = "certifi"
 version = "2025.4.26"
 requires_python = ">=3.6"
 summary = "Python package for providing Mozilla's CA Bundle."
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "certifi-2025.4.26-py3-none-any.whl", hash = "sha256:30350364dfe371162649852c63336a15c70c6510c2ad5015b21c2345311805f3"},
     {file = "certifi-2025.4.26.tar.gz", hash = "sha256:0a816057ea3cdefcef70270d2c515e4506bbc954f417fa5ade2021213bb8f0c6"},
@@ -52,7 +52,7 @@ name = "charset-normalizer"
 version = "3.4.2"
 requires_python = ">=3.7"
 summary = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "charset_normalizer-3.4.2-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:7c48ed483eb946e6c04ccbe02c6b4d1d48e51944b6db70f697e089c193404941"},
     {file = "charset_normalizer-3.4.2-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b2d318c11350e10662026ad0eb71bb51c7812fc8590825304ae0bdd4ac283acd"},
@@ -115,7 +115,7 @@ name = "colorama"
 version = "0.4.6"
 requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
 summary = "Cross-platform colored terminal text."
-groups = ["dhlab-meta", "dhlab-namespace", "test"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace", "test"]
 marker = "sys_platform == \"win32\" or platform_system == \"Windows\""
 files = [
     {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
@@ -127,7 +127,7 @@ name = "contourpy"
 version = "1.3.2"
 requires_python = ">=3.10"
 summary = "Python library for calculating contours of 2D quadrilateral grids"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "numpy>=1.23",
 ]
@@ -196,7 +196,7 @@ name = "cycler"
 version = "0.12.1"
 requires_python = ">=3.8"
 summary = "Composable style cycles"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "cycler-0.12.1-py3-none-any.whl", hash = "sha256:85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30"},
     {file = "cycler-0.12.1.tar.gz", hash = "sha256:88bb128f02ba341da8ef447245a9e138fae777f6a23943da4540077d3601eb1c"},
@@ -207,34 +207,34 @@ name = "decorator"
 version = "5.2.1"
 requires_python = ">=3.8"
 summary = "Decorators for Humans"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "decorator-5.2.1-py3-none-any.whl", hash = "sha256:d316bb415a2d9e2d2b3abcc4084c6502fc09240e292cd76a76afc106a1c8e04a"},
     {file = "decorator-5.2.1.tar.gz", hash = "sha256:65f266143752f734b0a7cc83c46f4618af75b8c5911b00ccb61d0ac9b6da0360"},
 ]
 
 [[package]]
-name = "dhlab"
+name = "dhlab-ns"
 version = "2.42.0"
 requires_python = ">=3.10"
-path = "./dhlab-meta-package"
+path = "./dhlab-ns-meta-package"
 summary = "Text and image analysis of the digital collection (books, newspapers, periodicals, and images) at the National Library of Norway"
-groups = ["dhlab-meta"]
+groups = ["dhlab-ns-meta"]
 dependencies = [
-    "dhlab-api",
-    "dhlab-core",
-    "dhlab-future",
-    "dhlab-legacy",
-    "dhlab-utils",
+    "dhlab-ns-api",
+    "dhlab-ns-core",
+    "dhlab-ns-future",
+    "dhlab-ns-legacy",
+    "dhlab-ns-utils",
 ]
 
 [[package]]
-name = "dhlab-api"
+name = "dhlab-ns-api"
 version = "1.0.0"
 requires_python = ">=3.10"
-path = "./dhlab-namespace/dhlab-api"
+path = "./dhlab-ns-namespace/dhlab-ns-api"
 summary = ""
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "networkx>=3.4.2",
     "pandas>=2.2.3",
@@ -242,44 +242,44 @@ dependencies = [
 ]
 
 [[package]]
-name = "dhlab-core"
+name = "dhlab-ns-core"
 version = "1.0.0"
 requires_python = ">=3.10"
-path = "./dhlab-namespace/dhlab-core"
+path = "./dhlab-ns-namespace/dhlab-ns-core"
 summary = ""
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
-    "dhlab-api",
+    "dhlab-ns-api",
     "networkx>=3.4.2",
     "pandas>=2.2.3",
     "tqdm>=4.67.1",
 ]
 
 [[package]]
-name = "dhlab-future"
+name = "dhlab-ns-future"
 version = "0.1.0"
 requires_python = ">=3.10"
-path = "./dhlab-namespace/dhlab-future"
+path = "./dhlab-ns-namespace/dhlab-ns-future"
 summary = ""
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "IPython>=8.36.0",
-    "dhlab-api",
-    "dhlab-core",
+    "dhlab-ns-api",
+    "dhlab-ns-core",
     "pandas>=2.2.3",
 ]
 
 [[package]]
-name = "dhlab-legacy"
+name = "dhlab-ns-legacy"
 version = "1.0.0"
 requires_python = ">=3.10"
-path = "./dhlab-namespace/dhlab-legacy"
+path = "./dhlab-ns-namespace/dhlab-ns-legacy"
 summary = ""
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "IPython>=8.36.0",
     "beautifulsoup4>=4.13.4",
-    "dhlab-core",
+    "dhlab-ns-core",
     "matplotlib>=3.10.3",
     "networkx>=3.4.2",
     "numpy>=2.2.6",
@@ -291,12 +291,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "dhlab-utils"
+name = "dhlab-ns-utils"
 version = "1.0.0"
 requires_python = ">=3.10"
-path = "./dhlab-namespace/dhlab-utils"
+path = "./dhlab-ns-namespace/dhlab-ns-utils"
 summary = ""
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "IPython>=8.36.0",
     "matplotlib>=3.10.3",
@@ -311,7 +311,7 @@ name = "exceptiongroup"
 version = "1.3.0"
 requires_python = ">=3.7"
 summary = "Backport of PEP 654 (exception groups)"
-groups = ["dhlab-meta", "dhlab-namespace", "test"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace", "test"]
 marker = "python_version < \"3.11\""
 dependencies = [
     "typing-extensions>=4.6.0; python_version < \"3.13\"",
@@ -326,7 +326,7 @@ name = "executing"
 version = "2.2.0"
 requires_python = ">=3.8"
 summary = "Get the currently executing AST node of a frame, and other information"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "executing-2.2.0-py2.py3-none-any.whl", hash = "sha256:11387150cad388d62750327a53d3339fad4888b39a6fe233c3afbb54ecffd3aa"},
     {file = "executing-2.2.0.tar.gz", hash = "sha256:5d108c028108fe2551d1a7b2e8b713341e2cb4fc0aa7dcf966fa4327a5226755"},
@@ -337,7 +337,7 @@ name = "fonttools"
 version = "4.58.1"
 requires_python = ">=3.9"
 summary = "Tools to manipulate font files"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "fonttools-4.58.1-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:4ebd423034ac4f74196c1ae29f8ed3b862f820345acbf35600af8596ebf62573"},
     {file = "fonttools-4.58.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:9dc36f4b4044d95e6fb358da4c3e6a5c07c9b6f4c1e8c396e89bee3b65dae902"},
@@ -380,7 +380,7 @@ name = "idna"
 version = "3.10"
 requires_python = ">=3.6"
 summary = "Internationalized Domain Names in Applications (IDNA)"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "idna-3.10-py3-none-any.whl", hash = "sha256:946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3"},
     {file = "idna-3.10.tar.gz", hash = "sha256:12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9"},
@@ -402,7 +402,7 @@ name = "ipython"
 version = "8.37.0"
 requires_python = ">=3.10"
 summary = "IPython: Productive Interactive Computing"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "colorama; sys_platform == \"win32\"",
     "decorator",
@@ -426,7 +426,7 @@ name = "jedi"
 version = "0.19.2"
 requires_python = ">=3.6"
 summary = "An autocompletion tool for Python that can be used for text editors."
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "parso<0.9.0,>=0.8.4",
 ]
@@ -440,7 +440,7 @@ name = "kiwisolver"
 version = "1.4.8"
 requires_python = ">=3.10"
 summary = "A fast implementation of the Cassowary constraint solver"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "kiwisolver-1.4.8-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:88c6f252f6816a73b1f8c904f7bbe02fd67c09a69f7cb8a0eecdbf5ce78e63db"},
     {file = "kiwisolver-1.4.8-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:c72941acb7b67138f35b879bbe85be0f6c6a70cab78fe3ef6db9c024d9223e5b"},
@@ -529,7 +529,7 @@ name = "matplotlib"
 version = "3.10.3"
 requires_python = ">=3.10"
 summary = "Python plotting package"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "contourpy>=1.0.1",
     "cycler>=0.10",
@@ -583,7 +583,7 @@ name = "matplotlib-inline"
 version = "0.1.7"
 requires_python = ">=3.8"
 summary = "Inline Matplotlib backend for Jupyter"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "traitlets",
 ]
@@ -597,7 +597,7 @@ name = "networkx"
 version = "3.4.2"
 requires_python = ">=3.10"
 summary = "Python package for creating and manipulating graphs and networks"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "networkx-3.4.2-py3-none-any.whl", hash = "sha256:df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f"},
     {file = "networkx-3.4.2.tar.gz", hash = "sha256:307c3669428c5362aab27c8a1260aa8f47c4e91d3891f48be0141738d8d053e1"},
@@ -608,7 +608,7 @@ name = "numpy"
 version = "2.2.6"
 requires_python = ">=3.10"
 summary = "Fundamental package for array computing in Python"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "numpy-2.2.6-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:b412caa66f72040e6d268491a59f2c43bf03eb6c96dd8f0307829feb7fa2b6fb"},
     {file = "numpy-2.2.6-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:8e41fd67c52b86603a91c1a505ebaef50b3314de0213461c7a6e99c9a3beff90"},
@@ -672,7 +672,7 @@ name = "packaging"
 version = "25.0"
 requires_python = ">=3.8"
 summary = "Core utilities for Python packages"
-groups = ["dhlab-meta", "dhlab-namespace", "test"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace", "test"]
 files = [
     {file = "packaging-25.0-py3-none-any.whl", hash = "sha256:29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484"},
     {file = "packaging-25.0.tar.gz", hash = "sha256:d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f"},
@@ -683,7 +683,7 @@ name = "pandas"
 version = "2.2.3"
 requires_python = ">=3.9"
 summary = "Powerful data structures for data analysis, time series, and statistics"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "numpy>=1.22.4; python_version < \"3.11\"",
     "numpy>=1.23.2; python_version == \"3.11\"",
@@ -735,7 +735,7 @@ name = "parso"
 version = "0.8.4"
 requires_python = ">=3.6"
 summary = "A Python Parser"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "parso-0.8.4-py2.py3-none-any.whl", hash = "sha256:a418670a20291dacd2dddc80c377c5c3791378ee1e8d12bffc35420643d43f18"},
     {file = "parso-0.8.4.tar.gz", hash = "sha256:eb3a7b58240fb99099a345571deecc0f9540ea5f4dd2fe14c2a99d6b281ab92d"},
@@ -745,7 +745,7 @@ files = [
 name = "pexpect"
 version = "4.9.0"
 summary = "Pexpect allows easy control of interactive console applications."
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 marker = "sys_platform != \"win32\" and sys_platform != \"emscripten\""
 dependencies = [
     "ptyprocess>=0.5",
@@ -760,7 +760,7 @@ name = "pillow"
 version = "11.2.1"
 requires_python = ">=3.9"
 summary = "Python Imaging Library (Fork)"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "pillow-11.2.1-cp310-cp310-macosx_10_10_x86_64.whl", hash = "sha256:d57a75d53922fc20c165016a20d9c44f73305e67c351bbc60d1adaf662e74047"},
     {file = "pillow-11.2.1-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:127bf6ac4a5b58b3d32fc8289656f77f80567d65660bc46f72c0d77e6600cc95"},
@@ -850,7 +850,7 @@ name = "prompt-toolkit"
 version = "3.0.51"
 requires_python = ">=3.8"
 summary = "Library for building powerful interactive command lines in Python"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "wcwidth",
 ]
@@ -863,7 +863,7 @@ files = [
 name = "ptyprocess"
 version = "0.7.0"
 summary = "Run a subprocess in a pseudo terminal"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 marker = "sys_platform != \"win32\" and sys_platform != \"emscripten\""
 files = [
     {file = "ptyprocess-0.7.0-py2.py3-none-any.whl", hash = "sha256:4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35"},
@@ -874,7 +874,7 @@ files = [
 name = "pure-eval"
 version = "0.2.3"
 summary = "Safely evaluate AST nodes without side effects"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "pure_eval-0.2.3-py3-none-any.whl", hash = "sha256:1db8e35b67b3d218d818ae653e27f06c3aa420901fa7b081ca98cbedc874e0d0"},
     {file = "pure_eval-0.2.3.tar.gz", hash = "sha256:5f4e983f40564c576c7c8635ae88db5956bb2229d7e9237d03b3c0b0190eaf42"},
@@ -885,7 +885,7 @@ name = "pygments"
 version = "2.19.1"
 requires_python = ">=3.8"
 summary = "Pygments is a syntax highlighting package written in Python."
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "pygments-2.19.1-py3-none-any.whl", hash = "sha256:9ea1544ad55cecf4b8242fab6dd35a93bbce657034b0611ee383099054ab6d8c"},
     {file = "pygments-2.19.1.tar.gz", hash = "sha256:61c16d2a8576dc0649d9f39e089b5f02bcd27fba10d8fb4dcc28173f7a45151f"},
@@ -896,7 +896,7 @@ name = "pyparsing"
 version = "3.2.3"
 requires_python = ">=3.9"
 summary = "pyparsing module - Classes and methods to define and execute parsing grammars"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "pyparsing-3.2.3-py3-none-any.whl", hash = "sha256:a749938e02d6fd0b59b356ca504a24982314bb090c383e3cf201c95ef7e2bfcf"},
     {file = "pyparsing-3.2.3.tar.gz", hash = "sha256:b9c13f1ab8b3b542f72e28f634bad4de758ab3ce4546e4301970ad6fa77c38be"},
@@ -926,7 +926,7 @@ name = "python-dateutil"
 version = "2.9.0.post0"
 requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
 summary = "Extensions to the standard Python datetime module"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "six>=1.5",
 ]
@@ -939,7 +939,7 @@ files = [
 name = "python-louvain"
 version = "0.16"
 summary = "Louvain algorithm for community detection"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "networkx",
     "numpy",
@@ -952,7 +952,7 @@ files = [
 name = "pytz"
 version = "2025.2"
 summary = "World timezone definitions, modern and historical"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "pytz-2025.2-py2.py3-none-any.whl", hash = "sha256:5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00"},
     {file = "pytz-2025.2.tar.gz", hash = "sha256:360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3"},
@@ -963,7 +963,7 @@ name = "requests"
 version = "2.32.3"
 requires_python = ">=3.8"
 summary = "Python HTTP for Humans."
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "certifi>=2017.4.17",
     "charset-normalizer<4,>=2",
@@ -980,7 +980,7 @@ name = "seaborn"
 version = "0.13.2"
 requires_python = ">=3.8"
 summary = "Statistical data visualization"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "matplotlib!=3.6.1,>=3.4",
     "numpy!=1.24.0,>=1.20",
@@ -996,7 +996,7 @@ name = "six"
 version = "1.17.0"
 requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
 summary = "Python 2 and 3 compatibility utilities"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"},
     {file = "six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81"},
@@ -1007,7 +1007,7 @@ name = "soupsieve"
 version = "2.7"
 requires_python = ">=3.8"
 summary = "A modern CSS selector implementation for Beautiful Soup."
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "soupsieve-2.7-py3-none-any.whl", hash = "sha256:6e60cc5c1ffaf1cebcc12e8188320b72071e922c2e897f737cadce79ad5d30c4"},
     {file = "soupsieve-2.7.tar.gz", hash = "sha256:ad282f9b6926286d2ead4750552c8a6142bc4c783fd66b0293547c8fe6ae126a"},
@@ -1017,7 +1017,7 @@ files = [
 name = "stack-data"
 version = "0.6.3"
 summary = "Extract data from python stack frames and tracebacks for informative displays"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "asttokens>=2.1.0",
     "executing>=1.2.0",
@@ -1075,7 +1075,7 @@ name = "tqdm"
 version = "4.67.1"
 requires_python = ">=3.7"
 summary = "Fast, Extensible Progress Meter"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "colorama; platform_system == \"Windows\"",
 ]
@@ -1089,7 +1089,7 @@ name = "traitlets"
 version = "5.14.3"
 requires_python = ">=3.8"
 summary = "Traitlets Python configuration system"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "traitlets-5.14.3-py3-none-any.whl", hash = "sha256:b74e89e397b1ed28cc831db7aea759ba6640cb3de13090ca145426688ff1ac4f"},
     {file = "traitlets-5.14.3.tar.gz", hash = "sha256:9ed0579d3502c94b4b3732ac120375cda96f923114522847de4b3bb98b96b6b7"},
@@ -1100,7 +1100,7 @@ name = "typing-extensions"
 version = "4.13.2"
 requires_python = ">=3.8"
 summary = "Backported and Experimental Type Hints for Python 3.8+"
-groups = ["dhlab-meta", "dhlab-namespace", "test"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace", "test"]
 files = [
     {file = "typing_extensions-4.13.2-py3-none-any.whl", hash = "sha256:a439e7c04b49fec3e5d3e2beaa21755cadbbdc391694e28ccdd36ca4a1408f8c"},
     {file = "typing_extensions-4.13.2.tar.gz", hash = "sha256:e6c81219bd689f51865d9e372991c540bda33a0379d5573cddb9a3a23f7caaef"},
@@ -1111,7 +1111,7 @@ name = "tzdata"
 version = "2025.2"
 requires_python = ">=2"
 summary = "Provider of IANA time zone data"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "tzdata-2025.2-py2.py3-none-any.whl", hash = "sha256:1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8"},
     {file = "tzdata-2025.2.tar.gz", hash = "sha256:b60a638fcc0daffadf82fe0f57e53d06bdec2f36c4df66280ae79bce6bd6f2b9"},
@@ -1122,7 +1122,7 @@ name = "urllib3"
 version = "2.4.0"
 requires_python = ">=3.9"
 summary = "HTTP library with thread-safe connection pooling, file post, and more."
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 files = [
     {file = "urllib3-2.4.0-py3-none-any.whl", hash = "sha256:4e16665048960a0900c702d4a66415956a584919c03361cac9f1df5c5dd7e813"},
     {file = "urllib3-2.4.0.tar.gz", hash = "sha256:414bc6535b787febd7567804cc015fee39daab8ad86268f1310a9250697de466"},
@@ -1132,7 +1132,7 @@ files = [
 name = "wcwidth"
 version = "0.2.13"
 summary = "Measures the displayed width of unicode strings in a terminal"
-groups = ["dhlab-meta", "dhlab-namespace"]
+groups = ["dhlab-ns-meta", "dhlab-ns-namespace"]
 dependencies = [
     "backports-functools-lru-cache>=1.2.1; python_version < \"3.2\"",
 ]
