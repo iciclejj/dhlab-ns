@@ -1,4 +1,4 @@
-from dhlab.text.conc_coll import ConcCounts
+from dhlab_ns.text.conc_coll import ConcCounts
 
 dhlab_books = [
     100000000,

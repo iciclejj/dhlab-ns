@@ -1,5 +1,5 @@
 import pytest
-from dhlab.text import Concordance, Corpus
+from dhlab_ns.text import Concordance, Corpus
 
 
 def test_concordance():

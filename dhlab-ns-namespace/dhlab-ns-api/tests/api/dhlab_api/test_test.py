@@ -1,6 +1,6 @@
 import pytest
 
-import dhlab.api.dhlab_api as api
+import dhlab_ns.api.dhlab_api as api
 
 @pytest.fixture(scope="module")
 def api_fn():

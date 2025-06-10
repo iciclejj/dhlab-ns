@@ -1,6 +1,6 @@
 import requests
 import unittest.mock
-from dhlab.api.nb_ngram_api import make_word_graph
+from dhlab_ns.api.nb_ngram_api import make_word_graph
 import json
 from typing import Literal
 

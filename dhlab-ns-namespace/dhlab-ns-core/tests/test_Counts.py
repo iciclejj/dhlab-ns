@@ -1,5 +1,5 @@
-import dhlab.text as dh
-from dhlab.text.utils import urnlist
+import dhlab_ns.text as dh
+from dhlab_ns.text.utils import urnlist
 
 
 def counts_test_func(corpus_like, words=None):

@@ -1,4 +1,4 @@
-from dhlab.text.conc_coll import WordConc
+from dhlab_ns.text.conc_coll import WordConc
 
 # testparams
 dhlab_books = [

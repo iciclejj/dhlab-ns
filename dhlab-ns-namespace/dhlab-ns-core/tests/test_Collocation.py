@@ -1,4 +1,4 @@
-from dhlab.text import Corpus, Collocations
+from dhlab_ns.text import Corpus, Collocations
 
 test_urns = [
     "URN:NBN:no-nb_digibok_2008091004038",

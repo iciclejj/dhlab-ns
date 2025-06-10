@@ -1,5 +1,5 @@
 import pytest
-import dhlab.text as dh
+import dhlab_ns.text as dh
 import pandas as pd
 
 test_urns = """URN:NBN:no-nb_digibok_2008091004038
@@ -34,7 +34,7 @@ class TestDispersion:
 
     def test_plot(self, mocker, urn):
         d = dh.Dispersion(urn, wordbag="han")
-        mock_plot = mocker.patch("dhlab.Dispersion.plot")
+        mock_plot = mocker.patch("dhlab_ns.Dispersion.plot")
         d.plot()
         mock_plot.assert_called_once()
 

@@ -1,6 +1,6 @@
 import pytest
-from dhlab.text.corpus_collection import CorpusCollection
-from dhlab.text.corpus import Corpus
+from dhlab_ns.text.corpus_collection import CorpusCollection
+from dhlab_ns.text.corpus import Corpus
 
 
 class TestCorpusCollection:

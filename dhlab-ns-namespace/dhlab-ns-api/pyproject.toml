@@ -19,4 +19,4 @@ build-backend = "pdm.backend"
 distribution = true
 
 [tool.pdm.build]
-includes = ["src/dhlab-ns"]
+includes = ["src/dhlab_ns"]

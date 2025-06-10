@@ -1,5 +1,5 @@
 import pytest
-from dhlab.metadata.natbib import metadata_query, metadata_from_urn
+from dhlab_ns.metadata.natbib import metadata_query, metadata_from_urn
 import pandas as pd
 
 @pytest.mark.skip()

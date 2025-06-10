@@ -1,5 +1,5 @@
 import pytest
-from dhlab.legacy import nbtext
+from dhlab_ns.legacy import nbtext
 
 
 @pytest.mark.parametrize(

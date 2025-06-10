@@ -20,5 +20,8 @@ dhlab-ns-meta = [
     "dhlab-ns @ file:///${PROJECT_ROOT}/dhlab-ns-meta-package",
 ]
 
+[tool.pdm]
+distribution = true
+
 [tool.pytest.ini_options]
 # consider_namespace_packages = true

@@ -1,7 +1,7 @@
 import requests
 import unittest.mock
-from dhlab.api.nb_ngram_api import get_ngram
-from dhlab.api.utils import DHLabApiError
+from dhlab_ns.api.nb_ngram_api import get_ngram
+from dhlab_ns.api.utils import DHLabApiError
 import pytest
 
 

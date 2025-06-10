@@ -2,7 +2,7 @@ from unittest.mock import MagicMock
 import requests
 import pytest
 
-from dhlab.api.utils import DHLabApiError
+from dhlab_ns.api.utils import DHLabApiError
 import tests.api.utils as apitest
 
 @pytest.mark.usefixtures("api_fn")

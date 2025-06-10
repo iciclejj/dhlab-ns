@@ -1,4 +1,4 @@
-import dhlab.text as dh
+import dhlab_ns.text as dh
 import pytest
 import pandas as pd
 from typing import List
