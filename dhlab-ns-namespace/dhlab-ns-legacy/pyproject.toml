@@ -1,6 +1,6 @@
 [project]
 name = "dhlab-ns-legacy"
-version = "1.0.0"
+version = "1.0.1"
 description = ""
 authors = [
     {name = "The Digital Humanities Lab at The National Library of Norway (NB)", email = "dh-lab@nb.no"},

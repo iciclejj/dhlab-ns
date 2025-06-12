@@ -1,6 +1,6 @@
 [project]
 name = "dhlab-ns"
-version = "2.42.0"
+version = "2.42.1"
 description = "Text and image analysis of the digital collection (books, newspapers, periodicals, and images) at the National Library of Norway"
 authors = [
     {name = "The Digital Humanities Lab at The National Library of Norway (NB)", email = "dh-lab@nb.no"},
